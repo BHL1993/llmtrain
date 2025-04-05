@@ -77,3 +77,32 @@ class EventDataset(Dataset):
             "user_features": user_feat,
             "label": torch.tensor(label, dtype=torch.float)
         }
+
+
+from torch.nn.utils.rnn import pad_sequence
+
+
+def collate_fn(batch):
+    # 填充事件序列
+    padded_events = []
+    max_seq_len = max(len(sample['events']) for sample in batch)
+
+    for sample in batch:
+        events = sample['events']
+    # 填充到最大长度
+    padded = []
+    for _ in range(max_seq_len - len(events)):
+        padded.append({
+            "type": torch.tensor(0),  # 用0填充
+            "text": {"input_ids": torch.zeros(max_seq_length),
+                     "attention_mask": torch.zeros(max_seq_length)},
+            "time_intervals": torch.zeros(2)
+        })
+    padded_events.append(events + padded)
+
+    # 重组数据结构
+    return {
+        "events": padded_events,
+        "user_features": torch.stack([s['user_features'] for s in batch]),
+        "label": torch.stack([s['label'] for s in batch])
+    }
