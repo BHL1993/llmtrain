@@ -17,7 +17,7 @@ EXAMPLE_CSV_CONTENT = """
 csv_file = StringIO(EXAMPLE_CSV_CONTENT)
 df = pd.read_csv(csv_file)
 
-model_name = "/Users/baihailong/Documents/modelscope/LLM-Research/TableGPT2-7B"
+model_name = "/Users/baihailong/Documents/modelscope/LLM-Research/tablegpt_2_7B"
 
 model = AutoModelForCausalLM.from_pretrained(
     model_name, torch_dtype="auto", device_map="auto"
@@ -57,3 +57,5 @@ generated_ids = [
 ]
 
 response = tokenizer.batch_decode(generated_ids, skip_special_tokens=True)[0]
+print(messages)
+print(response)
