@@ -18,3 +18,10 @@ df = pd.read_csv(csv_file)
 str = df.head(5).to_string(index=False)
 
 print(df.head(5).to_string(index=False))
+
+
+
+
+if __name__ == "__main__":
+    for t in reversed(range(8)):
+        print(t)

@@ -187,7 +187,6 @@ training_args = TrainingArguments(
     save_steps=1000,
     save_total_limit=0,
     push_to_hub=False,
-    no_cuda=True,
     use_cpu=True,
     #     cpu=True,
     #     hub_model_id=hub_model_id,

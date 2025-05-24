@@ -1,0 +1,52 @@
+[
+    {
+        "prompt": "What is the capital of France?",
+        "chosen": "The capital of France is Paris.",
+        "rejected": "France does not have a capital."
+    },
+    {
+        "prompt": "Explain the concept of gravity.",
+        "chosen": "Gravity is a natural force that attracts objects with mass towards each other.",
+        "rejected": "Gravity is a type of energy that makes things float."
+    },
+    {
+        "prompt": "How do I bake a cake?",
+        "chosen": "To bake a cake, you need flour, sugar, eggs, and butter. Mix them together, pour into a pan, and bake at 180°C for 30 minutes.",
+        "rejected": "Baking a cake is too complicated to explain here."
+    },
+    {
+        "prompt": "What is machine learning?",
+        "chosen": "Machine learning is a field of artificial intelligence where computers learn from data to make predictions or decisions without being explicitly programmed.",
+        "rejected": "Machine learning is just about robots doing tasks."
+    },
+    {
+        "prompt": "Why is the sky blue?",
+        "chosen": "The sky appears blue because molecules in the Earth's atmosphere scatter shorter wavelengths of sunlight more effectively than longer wavelengths.",
+        "rejected": "The sky is blue because it reflects the ocean."
+    },
+    {
+        "prompt": "Tell me a joke.",
+        "chosen": "Why don't scientists trust atoms? Because they make up everything!",
+        "rejected": "I'm not good at jokes, sorry."
+    },
+    {
+        "prompt": "What is Python?",
+        "chosen": "Python is a high-level programming language known for its simplicity and versatility, often used in web development, data science, and automation.",
+        "rejected": "Python is just a snake."
+    },
+    {
+        "prompt": "How do I learn programming?",
+        "chosen": "Start by learning the basics of a programming language like Python, practice writing small programs, and gradually work on larger projects.",
+        "rejected": "Learning programming is too hard; you should give up."
+    },
+    {
+        "prompt": "What is the tallest mountain in the world?",
+        "chosen": "Mount Everest is the tallest mountain in the world, standing at 8,848 meters above sea level.",
+        "rejected": "The tallest mountain is probably somewhere in the ocean."
+    },
+    {
+        "prompt": "How does photosynthesis work?",
+        "chosen": "Photosynthesis is the process by which plants use sunlight, carbon dioxide, and water to produce oxygen and energy in the form of sugar.",
+        "rejected": "Photosynthesis is when plants breathe air."
+    }
+]

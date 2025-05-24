@@ -4,7 +4,7 @@ import math
 
 
 class GroupedQueryAttention(nn.Module):
-    def __init__(self, d_model=512, num_heads=8, groups=4):
+    def __init__(self, d_model=1536, num_heads=12, groups=6):
         """
         Args:
             d_model: 模型维度 (默认 512)
@@ -65,7 +65,7 @@ if __name__ == "__main__":
     d_model = 512
     x = torch.randn(batch_size, seq_len, d_model)
 
-    gqa = GroupedQueryAttention(d_model=d_model, num_heads=8, groups=4)
+    gqa = GroupedQueryAttention()
     output, attn = gqa(x)
 
     print(f"输入形状: {x.shape}")
